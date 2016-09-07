@@ -1,0 +1,25 @@
+{
+  "name": "node-express-mongo",
+  "version": "1.0.0",
+  "description": "a demo for express and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenfengyanyu/node-express-mongo.git"
+  },
+  "keywords": [
+    "demo",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "jartto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenfengyanyu/node-express-mongo/issues"
+  },
+  "homepage": "https://github.com/chenfengyanyu/node-express-mongo#readme"
+}
