@@ -1,35 +1,32 @@
 extends layout
 block title
-  title ceshi
+  title index
 block content
-  h1= title
-  p Welcome to #{title}
-  hr
-block footer
-  a(class='test',href='#') Google
-  - var flag = false
-  p(class=flag?'aaa':'bbb')#myid 看看编译成什么格式
-  input(type='checkbox',checked)
-  input(type='text',value='hello world!')
-  a(href='#',style={color:'red'}) 内联样式
-  - var classes = ['two','one','three']
-  a(class=classes) 多个类
-  a.bing1(class=classes,class=['bing'])
-  span.test 呵呵
-  - var friends = 10
-  case friends
-    when 0
-      p you have no friends
-    when 1
-      p you have a friend
-    default
-      p you have #{friends} friends
-   - for (var x = 0; x < 3; x++)
-     li item
-   - var user = {name:'jartto'}
-   p welcome #{user.name}
-   //test comments
-   include footer
+    form.form-inline(role='form')
+      .form-group
+        label(for='name') Name
+        p.col-sm-2.form-control-static Name
+        .col-md-3
+          input.form-control#name(type='text',placeholder='name')
+      .form-group
+        label(for='phone') Phone
+        p.col-sm-2.form-control-static Phone
+        .col-md-3
+          input.form-control#phone(type='text',placeholder='phone')
+      .form-group
+        .col-md-offset-2.col-md-3
+          button.btn.btn-danger(type='submit') Add
+      p
+      table.table.table-condensed.table-striped
+        tr
+        - var arrs = ['#','Name','Phone']
+        - for(var i = 0; i < arrs.length; i++)
+          th #{arrs[i]}
+        - each item , index in args
+          tr
+            td #{index}
+            td #{item.name}
+            td #{item.phone}
 
 
 
