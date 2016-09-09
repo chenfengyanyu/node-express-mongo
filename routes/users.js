@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
 		    res.render('users', { args : data});
 		  }
 	})
-	
 });
 
 router.get('/name', function(req, res, next) {
