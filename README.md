@@ -26,13 +26,13 @@ mongod --config /usr/local/etc/mongod.conf
 ![效果图](http://7xvi3w.com1.z0.glb.clouddn.com/37D5F91F-2119-43FC-9DEA-0946E5AF05AA.png)
 
 ## mongodb可视化工具
-robomongo
+robomongo:
 https://robomongo.org/download
 
 ## 相关api文档
-http://v3.bootcss.com/css/#helper-classes
-http://www.expressjs.com.cn/guide/routing.html
-http://www.nodeclass.com/api/jade.html#install
-http://mongoosejs.com/docs/api.html#model_Model.update
+- http://v3.bootcss.com/css/#helper-classes
+- http://www.expressjs.com.cn/guide/routing.html
+- http://www.nodeclass.com/api/jade.html#install
+- http://mongoosejs.com/docs/api.html#model_Model.update
 
 
